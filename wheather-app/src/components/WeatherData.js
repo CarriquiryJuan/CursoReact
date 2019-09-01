@@ -1,6 +1,7 @@
 import React from "react";
 import WeatherExtraInfo from "./WeatherExtraInfo";
 import WeatherTemperature from "./WeatherTemperature";
+//import PropTypes from "prop-types";
 import {
   SUN /*,CLOUD, CLOUDY, RAIN, SNOW, WINDY */
 } from "./../constants/weathers";
@@ -10,5 +11,6 @@ const WeatherData = () => (
     <WeatherExtraInfo humidity={80} wind={"10 m/s"} />
   </div>
 );
+//WeatherData.propTypes = {};
 
 export default WeatherData;
