@@ -4,7 +4,7 @@ import WeatherTemperature from "./WeatherTemperature";
 //import PropTypes from "prop-types";
 import {
   SUN /*,CLOUD, CLOUDY, RAIN, SNOW, WINDY */
-} from "./../constants/weathers";
+} from "./../../../constants/weathers";
 const WeatherData = () => (
   <div>
     <WeatherTemperature temperature={20} weatherState={SUN} />

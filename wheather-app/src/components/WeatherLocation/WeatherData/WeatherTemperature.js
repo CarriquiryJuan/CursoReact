@@ -1,7 +1,14 @@
 import React from "react";
 import WeatherIcons from "react-weathericons";
 import PropTypes from "prop-types";
-import { CLOUD, CLOUDY, RAIN, SUN, SNOW, WINDY } from "./../constants/weathers";
+import {
+  CLOUD,
+  CLOUDY,
+  RAIN,
+  SUN,
+  SNOW,
+  WINDY
+} from "./../../../constants/weathers";
 
 const icons = {
   [SUN]: "day-sunny",
