@@ -3,6 +3,7 @@ import transformWeather from "./../services/transformWeather";
 import {api_weather} from "./../../constants/api_url";
 import Location from "./Location";
 import WeatherData from "./WeatherData";
+import CircularProgress from "@material-ui/core/CircularProgress"
 import './styles.css';
 
 class WeatherLocation extends Component{
@@ -52,7 +53,7 @@ class WeatherLocation extends Component{
       <Location city={city}></Location>
       {data ?
         <WeatherData data={data}></WeatherData> :
-        "Cargando..."
+        <CircularProgress size={50}/>
       }
     </div>);
   }
