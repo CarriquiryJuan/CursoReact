@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 
 import "./App.css";
 import LocationList from "./components/LocationList";
@@ -8,12 +8,18 @@ const cities = [
   "Mexico,mex",
   "Punta del Este,uy",
 ];
-function App() {
-  return (
-    <div className="App">
-      <LocationList cities = {cities}></LocationList>
-    </div>
-  );
+class App extends Component {
+  handleSelectedLocation = city =>{
+    console.log(`handleSelectedLocation ${city}`);
+  };
+  render() {
+   return(
+      <div className="App">
+        <LocationList cities = {cities}
+         onSelectedLocation={this.handleSelectedLocation}></LocationList>
+      </div>
+   );
+  }
 }
 
 export default App;
