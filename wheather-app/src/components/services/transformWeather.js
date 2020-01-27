@@ -2,7 +2,7 @@
 import convert from 'convert-units';
 import {
     SUN  /*,CLOUD, CLOUDY, RAIN, SNOW, WINDY */
-  } from "./../../constants/weathers";
+  } from "../constants/weathers";
 
 const getTemp = kelvin => {
     return Number(convert(kelvin).from('K').to("C").toFixed(2));

@@ -8,7 +8,7 @@ import {
   SUN,
   SNOW,
   WINDY
-} from "./../../../constants/weathers";
+} from "../../constants/weathers";
 import "./styles.css";
 
 const icons = {
