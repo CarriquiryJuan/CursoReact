@@ -1,4 +1,4 @@
-import {api_key, url_base_weather} from "./../constants/api_url";
+import {api_key, url_base_weather} from "../constants/api_url";
 
 
 const getUrlWeateherbyCity = city =>{

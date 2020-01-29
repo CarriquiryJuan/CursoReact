@@ -8,7 +8,7 @@ import {
   SNOW,
   THUNDER,
   DRIZZLE,
-} from "../../constants/weathers";
+} from "../../../constants/weathers";
 import "./styles.css";
 
 const icons = {
