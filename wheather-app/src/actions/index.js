@@ -18,7 +18,7 @@ export const setSelectedCity = payload =>{
         return fetch(url_forecast).then( 
             data => (data.json())
         ).then( weather_data =>{
-            console.log( "antes del trasnform"+weather_data)
+            console.log( "antes del trasnform "+weather_data)
             const forecastData =  transformForecast(weather_data); 
             console.log(forecastData)
             //modificar el estado con el resultado de la promise
