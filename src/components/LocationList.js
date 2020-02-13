@@ -10,12 +10,11 @@ const LocationList = ( { cities,onSelectedLocation }) =>{
     }
 
     const strToComponets =  cities  =>(
-        cities.map( city=> 
-        (
-            <WeatherLocation
-                key={city}
-                city={city}
-                onWeatherLocaitonClick={() => handleWeatherLocaitonClick(city)}             />))
+        cities.map( city=>(<WeatherLocation            
+                key={city.key}
+                city={city.name}
+                onWeatherLocaitonClick={() => handleWeatherLocaitonClick(city.name)} 
+                data={city.data} />))
     );
     return( <div className="locationList"> 
                 {strToComponets(cities)}            
